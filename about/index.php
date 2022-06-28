@@ -52,7 +52,7 @@
             </div>
             
             <div class="block"> block ddd</div>
-            <h2>+7 (926) 931 93 22</h2>
+            <h2>+79633123320</h2>
             <div class="content">content</div>
             <div class="content">content</div>
             <div class="content">content</div>
