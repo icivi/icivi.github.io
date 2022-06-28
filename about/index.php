@@ -4,20 +4,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Unsupervise Татой</title>
         <meta name="Keywords" content="Ателье. Опытный, Элитный, VIP, Портной, Татой, Τατόι, на, Москва" />
-        <meta name="Description" content="Ателье 'shatatoy.github.io' - Опытный портной, Москва, Татой - VIP" -->
-        <meta name="author" content="Ателье 'shatatoy.github.io' - Портной Τατόι, Татой">
+        <meta name="Description" content="Ателье 'icivi.github.io' - Опытный портной, Москва, Татой - VIP" -->
+        <meta name="author" content="Ателье 'icivi.github.io' - Портной Τατόι, Татой">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
         <link rel="shortcut icon" href="/favicon.ico" />
-        <meta property="og:title" content="Ателье 'shatatoy.github.io' - Портной Татой, Москва" />
-        <meta property="og:description" content="Ателье 'shatatoy.github.io' - Опытный портной, VIP-сервис, Москва" />
-        <meta property="og:image" content="https://shatatoy.github.io/images/jake-rocheleau-250.jpg" />
-        <meta property="og:url" content="https://shatatoy.github.io/" />
+        <meta property="og:title" content="Ателье 'icivi.github.io' - Портной Татой, Москва" />
+        <meta property="og:description" content="Ателье 'icivi.github.io' - Опытный портной, VIP-сервис, Москва" />
+        <meta property="og:image" content="https://icivi.github.io/images/jake-rocheleau-250.jpg" />
+        <meta property="og:url" content="https://icivi.github.io/" />
         <meta property="og:site_name" content="Сайт портного Татоя, Москва" />
-        <meta name="twitter:site" content="https://shatatoy.github.io/" />
-        <meta name="twitter:title" content="Ателье 'shatatoy.github.io' - Опытный портной Татой, Москва" />
-        <meta name="twitter:description" content="Ателье 'shatatoy.github.io' Опытный портной, VIP-сервис, Москва" />
+        <meta name="twitter:site" content="https://icivi.github.io/" />
+        <meta name="twitter:title" content="Ателье 'icivi.github.io' - Опытный портной Татой, Москва" />
+        <meta name="twitter:description" content="Ателье 'icivi.github.io' Опытный портной, VIP-сервис, Москва" />
         <meta property="place:location:latitude" content="55.752943"/>
         <meta property="place:location:longitude" content="37.583957"/>
         <meta property="business:contact_data:street_address" content="Новинский бульвар, 12"/>
@@ -26,7 +26,7 @@
         <meta property="business:contact_data:country_name" content="РФ"/>
         <meta property="business:contact_data:viber" content="+7963312332O"/>
         <meta property="business:contact_data:phone_number" content="+7963312332O"/>
-        <meta property="business:contact_data:website" content="https://shatatoy.github.io/"/>
+        <meta property="business:contact_data:website" content="https://icivi.github.io/"/>
         <meta name="geo.placename" content="Новинский бульвар, 12, Москва, РФ, 121069" />
         <meta name="geo.position" content="55.752943;37.583957" />
         <meta name="geo.region" content="RU-город Москва" />
