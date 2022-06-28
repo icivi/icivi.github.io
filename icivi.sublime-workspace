@@ -1,0 +1,494 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file_",
+				"file_put_contents"
+			],
+			[
+				"b",
+				"br"
+			],
+			[
+				"res",
+				"resc"
+			],
+			[
+				"incl",
+				"incl_orders"
+			],
+			[
+				"j",
+				"jso"
+			],
+			[
+				"z",
+				"zx"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"p",
+				"para"
+			],
+			[
+				"usd",
+				"usd_rur"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 335.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"helium",
+				"Helium: Connect Kernel"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"Preferences: ",
+				"Preferences: Terminus Settings"
+			],
+			[
+				"Preferences: GitSavvy Settings",
+				"Preferences: GitSavvy Settings"
+			],
+			[
+				"he",
+				"Hermes: Execute Block"
+			],
+			[
+				"her",
+				"Hermes: Connect Kernel"
+			],
+			[
+				"gitsa",
+				"GitSavvy: help"
+			],
+			[
+				"hel",
+				"Hermes: List Kernels"
+			],
+			[
+				"live",
+				"Start Python Live Coding Canvas"
+			],
+			[
+				"",
+				"Build With: Python3.7"
+			],
+			[
+				"py",
+				"SublimeREPL: Python"
+			],
+			[
+				"su",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"sub",
+				"SublimeREPL: Python"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Install Package Control"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"css",
+				"Emmet: Reflect CSS Value"
+			],
+			[
+				"Package Control",
+				"Package Control: Install Package"
+			],
+			[
+				"b",
+				"PHP CodeBeautifier"
+			],
+			[
+				"htm",
+				"HTMLBeautify"
+			],
+			[
+				"biu",
+				"PHP CodeBeautifier"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"h",
+				"HTMLBeautify"
+			],
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"xde",
+				"Xdebug: Session - Status"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 412.0,
+		"history":
+		[
+			"space_tracer hello.py",
+			"Package Control",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/sites/icivi.github.io"
+	],
+	"file_history":
+	[
+		"/C/Users/tatoy/Documents/py/вывод на русском в sb3 - play_v2.py",
+		"/C/Users/tatoy/Documents/py/sftp-config.json",
+		"/C/Users/tatoy/Documents/py/pomodoro_01.py",
+		"/C/Users/tatoy/Documents/py/snimati.py",
+		"/C/Users/tatoy/Documents/py/wow!_notify!.py",
+		"/C/Users/tatoy/Documents/py/164_сводит_за 2шага.py",
+		"/C/Users/tatoy/Documents/ipynb/2021_07_08_СТ_100D_8ч_IMDB_reviews_с Учителем + Эффект от Второго потока Word2Vec/text_class_050a_результат_skip_gram_encoder_вот_давай_сравним_это_результаты_последняя_модель_добавления_няшек_пока_multidense.py",
+		"/E/PHP-7.2-x64_error.log",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/One mp3 1 сек 2/000вуд.txt",
+		"/D/One mp3 1 сек 2/тема - деньги/3D - картина мира (точнее больше 3D)/все имена файлов.txt",
+		"/c/users/tatoy/appdata/local/temp/regular_expression",
+		"/D/One mp3 1 сек 2/Прозрение/Список названий вторая половина Прозрения.txt",
+		"/C/Users/tatoy/Documents/py/play_v2_5_ok.py",
+		"/C/Users/tatoy/Desktop/Подсказки. Jupyter.txt",
+		"/C/Users/tatoy/Documents/ipynb_second/для автоНовые объекты/Визуализация_3_сверточных_слоев_глубокой_нейронной_сети_3_cnn (1).ipynb",
+		"/C/Users/tatoy/Desktop/log realtime.txt",
+		"/C/Users/tatoy/Documents/py/py_help_utils/json_print_echo.py",
+		"/C/Users/tatoy/Documents/py/play_v2_4min.py",
+		"/C/Users/tatoy/Documents/py/play_vlc.py",
+		"/C/Users/tatoy/Documents/py/play_pygame.py",
+		"/c/users/tatoy/appdata/local/programs/python/python37/lib/site-packages/playsound.py",
+		"/c/users/tatoy/appdata/local/programs/python/python37/lib/subprocess.py",
+		"/C/Users/tatoy/Documents/py/play_v2_3min.py",
+		"/c/users/tatoy/appdata/local/temp/полный_наборчик для ipynb.py",
+		"/c/users/tatoy/appdata/local/temp/наборчик_py,np,pd.py",
+		"/C/Users/tatoy/Documents/py/play2_3.pausa",
+		"/C/Users/tatoy/Documents/py/py_help_utils/global_locals_var.py",
+		"/c/users/tatoy/appdata/local/temp/tensorflow_keras_hunks.py",
+		"/C/Users/tatoy/Documents/py/play_v2_ch.py",
+		"/C/Users/tatoy/Documents/py/play_v2.py",
+		"/C/Users/tatoy/Documents/py/play_tek.py",
+		"/C/Users/tatoy/Documents/py/play.py",
+		"/C/Users/tatoy/Documents/py/play_v2_5min.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/utf8rus.py",
+		"/c/users/tatoy/appdata/local/temp/pip install весь наборчик.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/CatBoost_example.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/printt.py",
+		"/C/Users/tatoy/Documents/ipynb/2021_08_12_100D_ПаттернЭнкодер!_ПаттернДекодер!/ПаттернЭнкодерДекодер.txt",
+		"/C/Users/tatoy/Documents/py/py_help_utils/tatoychika_many.py",
+		"/C/Users/tatoy/Downloads/aixi_booster.py",
+		"/C/Users/tatoy/Downloads/aixi_booster (2).py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/check_packages.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/dir_sample.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/array2.py",
+		"/C/Users/tatoy/Downloads/a.txt",
+		"/C/sites/kurs-dollara.net было на сайте/brent.html",
+		"/C/sites/kurs-dollara.net/known_hosts",
+		"/C/Users/tatoy/Documents/ipynb/data/Новый текстовый документ.txt",
+		"/C/Users/tatoy/Documents/docs/README.md",
+		"/c/users/tatoy/appdata/local/temp/pip install tensorflow.py",
+		"/C/Users/tatoy/Downloads/Датасеты/Posts.xml",
+		"/C/Users/tatoy/Downloads/developer_survey_2020/survey_results_public.csv",
+		"/C/Users/tatoy/AppData/Local/Temp/Temp1_developer_survey_2020.zip/README_2020.txt",
+		"/C/Users/tatoy/Documents/py/__init__.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/lesson 27. Autoencoder_1.py",
+		"/C/Users/tatoy/Documents/ipynb/2021_07_12_СТ_100D_IMDB_с Учителем Улучшеный Average 2021_03_14/Text_Class_051 Skip-gram Encoder. Новая модель добавления няшек с Average.ipynb",
+		"/C/Users/tatoy/Documents/ipynb/2021_07_28_100D_Вопрос Ответ. Генерация текста/Вопрос_Ответ_125_делаю_декодер_ура_loss_0_0001.ipynb",
+		"/C/Users/tatoy/Documents/py/wget2.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/uznati_my_tek_gpu.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/my_tek_gpu.py",
+		"/C/Users/tatoy/Downloads/metadata.tsv",
+		"/C/Users/tatoy/Downloads/vectors.tsv",
+		"/C/Users/tatoy/Documents/ipynb/random_numbers.ipynb",
+		"/c/users/tatoy/appdata/local/temp/shatatoy.md",
+		"/C/Users/tatoy/Documents/py/py_help_utils/bench.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/Keras_2_versions.py",
+		"/C/Users/tatoy/Documents/py/py_help_utils/Точка после целого.py",
+		"/E/cache/tothemoon/logs/sell2_po_market.txt",
+		"/E/cache/tothemoon/logs/buy_po_market.txt",
+		"/C/Users/tatoy/AppData/Local/Temp/del.py",
+		"/C/Users/tatoy/Documents/py/imdb_lstm.py",
+		"/C/Users/tatoy/Documents/py/selfedu_autoencoder.py",
+		"/C/sites/kurs-dollara.net/help/span style=display_none.html",
+		"/C/sites/kurs-dollara.net/en/kurs-evro/index.php",
+		"/C/temp/деньги за 2-3 дня.mht",
+		"/C/sites/kurs-dollara.net/inc/menu-calendar.php",
+		"/D/repo/selfedu-rus_neural-network/lesson 29. VAE.py",
+		"/C/Users/tatoy/Documents/ipynb/Обучаю одну другой/transfer_learning.py",
+		"/C/Users/tatoy/AppData/Local/Temp/Temp1_cats_and_dogs_filtered.zip/cats_and_dogs_filtered/vectorize.py",
+		"/D/repo/selfedu-rus_neural-network/lesson 32. GAN.py",
+		"/C/Users/tatoy/Documents/py/regr_23.py",
+		"/C/sites/kurs-dollara.net-beget-exp/.htaccess",
+		"/C/sites/kurs-dollara.net/index.html",
+		"/D/repo/tensorflow_examples/community/en/ImageSegmentation_ModelSubclassing.ipynb",
+		"/C/Users/tatoy/Documents/py/quasi_svm.py",
+		"/C/site/tatoy.io/sell3_paras1.php",
+		"/C/Users/tatoy/Music/Playlists/ии нейро/00  Живое, ядро, ребенок, разум - Большая долгая выборка - пройдена первая половина  из всех ИИ.xspf",
+		"/C/Users/tatoy/AppData/Local/Temp/Rar$DIa0.826/pipeline.config",
+		"/C/Users/tatoy/Documents/py/regr_23 — comments.py",
+		"/C/Users/tatoy/Documents/ipynb/functional_2_INPUT_2_OUTPUT_Colab.ipynb",
+		"/C/Users/tatoy/Documents/py/googlenet.py",
+		"/C/Users/tatoy/Documents/ai diagrams/Универсальный ИИ 6.vpd",
+		"/C/Users/tatoy/AppData/Roaming/jupyter/nbextensions/snippets/snippets.json",
+		"/C/Users/tatoy/Documents/py/распознавание голоса и выполнения команд.py",
+		"/C/Users/tatoy/Documents/py/test3.py",
+		"/C/Users/tatoy/Documents/py/play_v2_1251.py",
+		"/C/Users/tatoy/Documents/py/diagnose_tensorboard.py",
+		"/C/Users/tatoy/Pictures/multiTimeline.csv",
+		"/C/Users/tatoy/Documents/py/play_voprosy_prozrenie.py",
+		"/C/Users/tatoy/Documents/py/службы.csv",
+		"/D/One mp3 1 сек 2/тема - деньги/задачи для ИИ можно кодить/я считаю что всё готово.mp3",
+		"/C/Users/tatoy/Documents/py/play_voprosy_ai.py",
+		"/C/Users/tatoy/Documents/py/Получение Вывода во время выполнения!! (в shell st3).py",
+		"/C/Users/tatoy/Documents/py/play.pausa",
+		"/C/Users/tatoy/Documents/py/requests_вместо_wget.py",
+		"/C/Users/tatoy/Documents/py/tes.py",
+		"/C/php/php.ini",
+		"/C/Users/tatoy/Documents/py/hello.py",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Text 3/Packages/SFTP/f-strings.py",
+		"/C/Users/tatoy/Documents/py/test.py",
+		"/C/Users/tatoy/Documents/py/live_codddding.del.no-sublime-package",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Text 3/Packages/User/Python3.7.sublime-build",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.errors.log",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Csftp-config.json",
+		"/C/Users/tatoy/Documents/py/GITSAVVY HELP.md",
+		"/C/Users/tatoy/Documents/py/отобразить_сменить_текущ_папку.py",
+		"/C/Users/tatoy/Documents/py/Для отладки Выводи переменную во время выполнения и в php найди тоже!! (в shell st3).py",
+		"/C/Users/tatoy/Documents/py/int.py",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Text 3/Packages/Live Coding in Python/python_live_coding.sublime-settings",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Text 3/Installed Packages/GitSavvy.sublime-package",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Text 3/Packages/User/SublimeIPythonNotebook.sublime-settings",
+		"/C/Users/tatoy/Documents/py/regr_23 — копия.py",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Merge/Packages/User/Preferences.sublime-settings",
+		"/C/Users/tatoy/Documents/py/строка прогрессбара.py",
+		"/C/Users/tatoy/AppData/Roaming/Sublime Text 3/Packages/IPython Notebook/SublimeIPythonNotebook.sublime-settings"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 125.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": false,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SFTP":
+	{
+		"height": 185.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 253.0
+	},
+	"output.find_results":
+	{
+		"height": 368.0
+	},
+	"output.sftp":
+	{
+		"height": 250.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 393.0
+	},
+	"output.xdebug":
+	{
+		"height": 143.0
+	},
+	"pinned_build_system": "Packages/User/Python3.7.sublime-build",
+	"project": "icivi.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 441.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
