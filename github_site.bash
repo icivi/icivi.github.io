@@ -30,3 +30,7 @@ https://github.com/icivi/icivi.github.io/upload/main
 Указываешь имя icivi.github.io
 укажи пустую папку 'c:\sites\icivi.github.io' 
 Потом в эту папку копируешь (переносишь) сайт. 
+
+
+Потом редактируешь. 
+в GitHub Desktop появится "commit", жми
