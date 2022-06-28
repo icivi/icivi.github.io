@@ -33,4 +33,5 @@ https://github.com/icivi/icivi.github.io/upload/main
 
 
 Потом редактируешь. 
-в GitHub Desktop появится "commit", жми
+в GitHub Desktop появится "commit to main", жми.
+потом появится 'push origin', жми.
