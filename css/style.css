@@ -703,7 +703,7 @@ i.fa.fa-chevron-right{
 .service-content p strong{
 	color: #001033;
 }
-.service-para { padding: 40px 0px 10px; }
+.service-para { padding: 0px 0px 20px; }
 .service-btn {
   float: right;
   clear: both;
@@ -715,7 +715,7 @@ i.fa.fa-chevron-right{
   border-radius: 6%;
 }
 .service-btn a {
-	padding: 13px 25px;
+	padding: 5px 25px;
 	display: block;
 }
 .service-btn a i{
