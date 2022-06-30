@@ -41,7 +41,7 @@
                     <div class="one-half ftco-animate fadeInUp ftco-animated">
                         <div class="overlap">
                             <div class="heading-section ftco-animate fadeInUp ftco-animated">
-                                <span class="subheading">Tatoy</span>
+                                <span class="subheading">Icivi</span>
                             <h2 class="mb-4">НИИ Коллективного Искусственного Интеллекта</h2>                        </div>
                             <div>
                                 <p> </p>
