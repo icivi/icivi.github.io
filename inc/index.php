@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>НИИ Коллективного Искусственного Интеллекта, Icivi</title>
-  <meta name="Keywords" content="Элитный, VIP, НИИ Коллективного Искусственного Интеллекта, Icivi, Icivi, на, межд., Москва" />
-  <meta name="Description" content="НИИ Коллективного Искусственного Интеллекта, Icivi" -->
-  <meta name="author" content="НИИ Коллективного Искусственного Интеллекта Icivi, Icivi">
+  <title>Лаборатория Коллективного Искусственного Интеллекта Icivi</title>
+  <meta name="Keywords" content="Элитный, VIP, Лаборатория, Коллективного, Искусственного, Интеллекта, Icivi, Санкт-Петербург, Санкт-Петербург" />
+  <meta name="Description" content="Лаборатория Коллективного Искусственного Интеллекта Icivi" -->
+  <meta name="author" content="Жуйков Александр, Icivi">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="HandheldFriendly" content="true">
   <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -13,26 +13,28 @@
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <link rel="stylesheet" type="text/css" href="/css/photo.css">
   <link rel="stylesheet" type="text/css" href="/css/responsive.css">
-  <meta property="og:title" content="НИИ Коллективного Искусственного Интеллекта, Icivi" />
-  <meta property="og:description" content="НИИ Коллективного Искусственного Интеллекта, Icivi" />
+
+  
+  <meta property="og:title" content="Лаборатория Icivi" />
+  <meta property="og:description" content="Лаборатория Коллективного Искусственного Интеллекта Icivi" />
   <meta property="og:image" content="http://tatoi.ru/images/jake-rocheleau-250.jpg" />
-  <meta property="og:url" content="https://icivi.github.io/" />
-  <meta property="og:site_name" content="НИИ Коллективного Искусственного Интеллекта, Icivi" />
-  <meta name="twitter:site" content="https://icivi.github.io/" />
-  <meta name="twitter:title" content="НИИ Коллективного Искусственного Интеллекта, Icivi" />
-  <meta name="twitter:description" content="НИИ Коллективного Искусственного Интеллекта, Icivi" />
+  <meta property="og:url" content="https://icivi.github.io" />
+  <meta property="og:site_name" content="Лаборатория Коллективного Искусственного Интеллекта Icivi" />
+  <meta name="twitter:site" content="https://icivi.github.io" />
+  <meta name="twitter:title" content="Лаборатория Icivi" />
+  <meta name="twitter:description" content="Лаборатория Коллективного Искусственного Интеллекта Icivi" />
 <meta property="place:location:latitude" content="55.752943"/>
 <meta property="place:location:longitude" content="37.583957"/>
-<meta property="business:contact_data:street_address" content="Новый Арбат, 12"/>
-<meta property="business:contact_data:locality" content="Москва"/>
+<meta property="business:contact_data:street_address" content="Рубинштейна, 32"/>
+<meta property="business:contact_data:locality" content="Санкт-Петербург"/>
 <meta property="business:contact_data:postal_code" content="121069"/>
 <meta property="business:contact_data:country_name" content="Россия"/>
 <meta property="business:contact_data:viber" content="+79633123320"/>
 <meta property="business:contact_data:phone_number" content="+79633123320"/>
 <meta property="business:contact_data:website" content="https://icivi.github.io"/>
-<meta name="geo.placename" content="Новый Арбат, 12, Москва, Россия, 121069" />
+<meta name="geo.placename" content="Рубинштейна, 32, Санкт-Петербург, Россия, 121069" />
 <meta name="geo.position" content="55.752943;37.583957" />
-<meta name="geo.region" content="RU-город Москва" />
+<meta name="geo.region" content="RU-город Санкт-Петербург" />
 <meta name="ICBM" content="55.752943, 37.583957" />
 
   <!--[if lt IE 9]>
@@ -42,8 +44,6 @@
 </head>
 <body>
 	
-
-
 
 </body>
 </html>
