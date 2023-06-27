@@ -25,14 +25,14 @@
   <meta name="twitter:description" content="Лаборатория Коллективного Искусственного Интеллекта Icivi" />
 <meta property="place:location:latitude" content="55.752943"/>
 <meta property="place:location:longitude" content="37.583957"/>
-<meta property="business:contact_data:street_address" content="Рубинштейна, 32"/>
+<meta property="business:contact_data:street_address" content="Лиговский пр., 87"/>
 <meta property="business:contact_data:locality" content="Санкт-Петербург"/>
 <meta property="business:contact_data:postal_code" content="121069"/>
 <meta property="business:contact_data:country_name" content="Россия"/>
 <meta property="business:contact_data:viber" content="+79633123320"/>
 <meta property="business:contact_data:phone_number" content="+79633123320"/>
 <meta property="business:contact_data:website" content="https://icivi.github.io"/>
-<meta name="geo.placename" content="Рубинштейна, 32, Санкт-Петербург, Россия, 121069" />
+<meta name="geo.placename" content="Лиговский пр., 87, Санкт-Петербург, Россия, 121069" />
 <meta name="geo.position" content="55.752943;37.583957" />
 <meta name="geo.region" content="RU-город Санкт-Петербург" />
 <meta name="ICBM" content="55.752943, 37.583957" />
