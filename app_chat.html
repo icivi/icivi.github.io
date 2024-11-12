@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чат-бот с использованием API</title>
+    <title>Чат-бот с использованием Cerebras API</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -113,11 +113,10 @@
     </div>
 
     <script>
-        const apiKey = 'YOUR_API_KEY'; // Замените на ваш API ключ
-        const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
+        const apiKey = 'csk-xdkjrkc645hjpxm6883c559hw35t8x35nrkcjpjpcyexymnw';
         let chatHistory = [];
 
-        function sendMessage() {
+        async function sendMessage() {
             const userInput = document.getElementById('user-input').value.trim();
             if (userInput === '') return;
 
@@ -125,27 +124,37 @@
             chatHistory.push({ role: 'user', content: userInput });
             document.getElementById('user-input').value = '';
 
-            fetch(apiUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${apiKey}`
-                },
-                body: JSON.stringify({
-                    prompt: userInput,
-                    max_tokens: 150
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                const botResponse = data.choices[0].text.trim();
+            try {
+                const response = await fetch('https://api.cerebras.net/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${apiKey}`
+                    },
+                    body: JSON.stringify({
+                        messages: [...chatHistory, { role: 'system', content: 'system_prompt' }],
+                        model: "llama3.1-70b",
+                        max_tokens: 1024,
+                        temperature: 1,
+                        top_p: 1
+                    })
+                });
+
+                if (!response.ok) {
+                    // Получаем текст ошибки из ответа
+                    const errorText = await response.text();
+                    throw new Error(`HTTP error! Status: ${response.status} - ${errorText}`);
+                }
+
+                const data = await response.json();
+                const botResponse = data.choices[0].message.content.trim();
                 addMessage(botResponse, 'bot');
                 chatHistory.push({ role: 'bot', content: botResponse });
-            })
-            .catch(error => {
+            } catch (error) {
                 console.error('Ошибка:', error);
-                addMessage('Произошла ошибка при получении ответа.', 'bot');
-            });
+                // Выводим сообщение об ошибке в чат
+                addMessage(`Произошла ошибка при получении ответа: ${error.message}`, 'bot');
+            }
         }
 
         function addMessage(content, sender) {
