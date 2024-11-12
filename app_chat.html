@@ -40,6 +40,10 @@
         .message.bot {
             text-align: left;
         }
+        .message.system {
+            text-align: center;
+            color: #6c757d;
+        }
         .message-content {
             display: inline-block;
             padding: 10px;
@@ -51,6 +55,10 @@
         }
         .message.bot .message-content {
             background-color: #e9ecef;
+        }
+        .message.system .message-content {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
         }
         .chat-input {
             display: flex;
@@ -91,12 +99,78 @@
         .chat-buttons button:hover {
             background-color: #545b62;
         }
+        .system-prompt-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .system-prompt-container input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .system-prompt-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .system-prompt-container button:hover {
+            background-color: #218838;
+        }
+        .config-container {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            background-color: #f8f9fa;
+        }
+        .config-container pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .python-code {
+            margin-top: 20px;
+        }
     </style>
+    <!-- Подключение highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
     <div class="chat-container">
         <div class="chat-header">
             Чат-бот
+        </div>
+        <div class="system-prompt-container">
+            <input type="text" id="system-prompt" placeholder="Введите system prompt...">
+            <button onclick="setSystemPrompt()">Установить</button>
+        </div>
+        <div class="config-container" id="config-container">
+            <strong>Текущий System Prompt:</strong>
+            <pre id="current-system-prompt"></pre>
+            <strong>Конфигурация генерации:</strong>
+            <pre id="generation-config"></pre>
+        </div>
+        <div class="python-code">
+            <strong>Пример кода Python:</strong>
+            <pre><code class="python">
+def hello_world():
+    print("Hello, World!")
+
+if __name__ == "__main__":
+    hello_world()
+            </code></pre>
         </div>
         <div class="chat-messages" id="chat-messages">
             <!-- Сообщения будут добавляться сюда -->
@@ -115,6 +189,23 @@
     <script>
         const apiKey = 'AIzaSyBKXOXNpeHAce4YCUyuEqdUybG3OwlV-Mg';
         let chatHistory = [];
+        let systemPrompt = '';
+        const generationConfig = {
+            temperature: 1,
+            topK: 40,
+            topP: 0.95,
+            maxOutputTokens: 8192,
+            responseMimeType: "text/plain"
+        };
+
+        function setSystemPrompt() {
+            systemPrompt = document.getElementById('system-prompt').value.trim();
+            if (systemPrompt !== '') {
+                chatHistory = [{ role: 'system', parts: [{ text: systemPrompt }] }];
+                addMessage(systemPrompt, 'system');
+            }
+            updateConfigDisplay();
+        }
 
         async function sendMessage() {
             const userInput = document.getElementById('user-input').value.trim();
@@ -132,13 +223,7 @@
                     },
                     body: JSON.stringify({
                         contents: chatHistory,
-                        generationConfig: {
-                            temperature: 1,
-                            topK: 40,
-                            topP: 0.95,
-                            maxOutputTokens: 8192,
-                            responseMimeType: "text/plain"
-                        }
+                        generationConfig: generationConfig
                     })
                 });
 
@@ -174,6 +259,8 @@
         function clearChat() {
             document.getElementById('chat-messages').innerHTML = '';
             chatHistory = [];
+            systemPrompt = '';
+            updateConfigDisplay();
         }
 
         function loadHistory() {
@@ -181,12 +268,24 @@
             if (savedHistory) {
                 chatHistory = JSON.parse(savedHistory);
                 chatHistory.forEach(message => addMessage(message.parts[0].text, message.role));
+                if (chatHistory[0] && chatHistory[0].role === 'system') {
+                    systemPrompt = chatHistory[0].parts[0].text;
+                }
+                updateConfigDisplay();
             }
         }
 
         function saveHistory() {
             localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
         }
+
+        function updateConfigDisplay() {
+            document.getElementById('current-system-prompt').textContent = systemPrompt || 'Не установлен';
+            document.getElementById('generation-config').textContent = JSON.stringify(generationConfig, null, 2);
+        }
+
+        // Инициализация отображения конфигурации при загрузке страницы
+        updateConfigDisplay();
     </script>
 </body>
 </html>
