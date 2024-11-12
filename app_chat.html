@@ -5,7 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Чат-бот с использованием Cerebras API</title>
     <style>
-        /* ... (ваши стили остаются без изменений) ... */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .chat-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .chat-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .chat-messages {
+            height: 300px;
+            overflow-y: scroll;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .message {
+            margin-bottom: 10px;
+        }
+        .message.user {
+            text-align: right;
+        }
+        .message.bot {
+            text-align: left;
+        }
+        .message-content {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 75%;
+        }
+        .message.user .message-content {
+            background-color: #dcf8c6;
+        }
+        .message.bot .message-content {
+            background-color: #e9ecef;
+        }
+        .chat-input {
+            display: flex;
+            padding: 15px;
+        }
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .chat-input button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .chat-input button:hover {
+            background-color: #0056b3;
+        }
+        .chat-buttons {
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .chat-buttons button {
+            margin: 0 5px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #6c757d;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .chat-buttons button:hover {
+            background-color: #545b62;
+        }
     </style>
 </head>
 <body>
@@ -35,19 +120,11 @@
             const userInput = document.getElementById('user-input').value.trim();
             if (userInput === '') return;
 
-            // Показываем сообщение пользователя
             addMessage(userInput, 'user');
+            chatHistory.push({ role: 'user', content: userInput });
             document.getElementById('user-input').value = '';
 
             try {
-                // Формируем сообщения в формате, который ожидает API
-                const messages = [
-                    {"role": "system", "content": "system_prompt"},
-                    ...chatHistory,
-                    {"role": "user", "content": userInput}
-                ];
-
-                // Отправляем запрос к API
                 const response = await fetch('https://api.cerebras.net/v1/chat/completions', {
                     method: 'POST',
                     headers: {
@@ -55,7 +132,7 @@
                         'Authorization': `Bearer ${apiKey}`
                     },
                     body: JSON.stringify({
-                        messages: messages,
+                        messages: [...chatHistory, { role: 'system', content: 'system_prompt' }],
                         model: "llama3.1-70b",
                         max_tokens: 1024,
                         temperature: 1,
@@ -63,33 +140,23 @@
                     })
                 });
 
-                // Если ответ не успешный, показываем ошибку
                 if (!response.ok) {
+                    // Получаем текст ошибки из ответа
                     const errorText = await response.text();
-                    throw new Error(`Ошибка API: ${response.status} - ${errorText}`);
+                    throw new Error(`HTTP error! Status: ${response.status} - ${errorText}`);
                 }
 
-                // Получаем ответ от API
                 const data = await response.json();
                 const botResponse = data.choices[0].message.content.trim();
-
-                // Добавляем сообщения в историю
-                chatHistory.push(
-                    {"role": "user", "content": userInput},
-                    {"role": "assistant", "content": botResponse}
-                );
-
-                // Показываем ответ бота
                 addMessage(botResponse, 'bot');
-
+                chatHistory.push({ role: 'bot', content: botResponse });
             } catch (error) {
                 console.error('Ошибка:', error);
-                // Показываем ошибку в чате
-                addMessage(`🚫 Ошибка: ${error.message}`, 'bot');
+                // Выводим сообщение об ошибке в чат
+                addMessage(`Произошла ошибка при получении ответа: ${error.message}`, 'bot');
             }
         }
 
-        // Добавление сообщения в чат
         function addMessage(content, sender) {
             const chatMessages = document.getElementById('chat-messages');
             const messageElement = document.createElement('div');
@@ -102,39 +169,22 @@
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
 
-        // Очистка чата
         function clearChat() {
             document.getElementById('chat-messages').innerHTML = '';
             chatHistory = [];
         }
 
-        // Сохранение истории
-        function saveHistory() {
-            localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
-            addMessage('История сохранена', 'bot');
-        }
-
-        // Загрузка истории
         function loadHistory() {
             const savedHistory = localStorage.getItem('chatHistory');
             if (savedHistory) {
                 chatHistory = JSON.parse(savedHistory);
-                document.getElementById('chat-messages').innerHTML = '';
-                chatHistory.forEach(message => {
-                    addMessage(message.content, message.role === 'user' ? 'user' : 'bot');
-                });
-                addMessage('История загружена', 'bot');
-            } else {
-                addMessage('История не найдена', 'bot');
+                chatHistory.forEach(message => addMessage(message.content, message.role));
             }
         }
 
-        // Обработка нажатия Enter в поле ввода
-        document.getElementById('user-input').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
+        function saveHistory() {
+            localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+        }
     </script>
 </body>
 </html>
