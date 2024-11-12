@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат-бот с использованием Google Generative AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .chat-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .chat-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .chat-messages {
+            height: 300px;
+            overflow-y: scroll;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .message {
+            margin-bottom: 10px;
+        }
+        .message.user {
+            text-align: right;
+        }
+        .message.bot {
+            text-align: left;
+        }
+        .message.system {
+            text-align: center;
+            color: #6c757d;
+        }
+        .message-content {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 75%;
+        }
+        .message.user .message-content {
+            background-color: #dcf8c6;
+        }
+        .message.bot .message-content {
+            background-color: #e9ecef;
+        }
+        .message.system .message-content {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+        }
+        .chat-input {
+            display: flex;
+            padding: 15px;
+        }
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .chat-input button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .chat-input button:hover {
+            background-color: #0056b3;
+        }
+        .chat-buttons {
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .chat-buttons button {
+            margin: 0 5px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #6c757d;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .chat-buttons button:hover {
+            background-color: #545b62;
+        }
+        .system-prompt-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .system-prompt-container input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .system-prompt-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .system-prompt-container button:hover {
+            background-color: #218838;
+        }
+        .config-container {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            background-color: #f8f9fa;
+        }
+        .config-container pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .python-code {
+            margin-top: 20px;
+        }
+    </style>
+    <!-- Подключение highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            Чат-бот
+        </div>
+        <div class="system-prompt-container">
+            <input type="text" id="system-prompt" placeholder="Введите system prompt...">
+            <button onclick="setSystemPrompt()">Установить</button>
+        </div>
+        <div class="config-container" id="config-container">
+            <strong>Текущий System Prompt:</strong>
+            <pre id="current-system-prompt"></pre>
+            <strong>Конфигурация генерации:</strong>
+            <pre id="generation-config"></pre>
+        </div>
+        <div class="python-code">
+            <strong>Пример кода Python:</strong>
+            <pre><code class="python">
+def hello_world():
+    print("Hello, World!")
+
+if __name__ == "__main__":
+    hello_world()
+            </code></pre>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Сообщения будут добавляться сюда -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Введите ваше сообщение...">
+            <button onclick="sendMessage()">Отправить</button>
+        </div>
+        <div class="chat-buttons">
+            <button onclick="clearChat()">Очистить чат</button>
+            <button onclick="loadHistory()">Загрузить историю</button>
+            <button onclick="saveHistory()">Сохранить историю</button>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = 'AIzaSyBKXOXNpeHAce4YCUyuEqdUybG3OwlV-Mg';
+        let chatHistory = [];
+        let systemPrompt = '';
+        const generationConfig = {
+            temperature: 1,
+            topK: 40,
+            topP: 0.95,
+            maxOutputTokens: 8192,
+            responseMimeType: "text/plain"
+        };
+
+        function setSystemPrompt() {
+            systemPrompt = document.getElementById('system-prompt').value.trim();
+            if (systemPrompt !== '') {
+                chatHistory = [{ role: 'system', parts: [{ text: systemPrompt }] }];
+                addMessage(systemPrompt, 'system');
+            }
+            updateConfigDisplay();
+        }
+
+        async function sendMessage() {
+            const userInput = document.getElementById('user-input').value.trim();
+            if (userInput === '') return;
+
+            addMessage(userInput, 'user');
+            chatHistory.push({ role: 'user', parts: [{ text: userInput }] });
+            document.getElementById('user-input').value = '';
+
+            try {
+                const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-002:generateContent?key=' + apiKey, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        contents: chatHistory,
+                        generationConfig: generationConfig
+                    })
+                });
+
+                if (!response.ok) {
+                    // Получаем текст ошибки из ответа
+                    const errorText = await response.text();
+                    throw new Error(`HTTP error! Status: ${response.status} - ${errorText}`);
+                }
+
+                const data = await response.json();
+                const botResponse = data.candidates[0].content.parts[0].text.trim();
+                addMessage(botResponse, 'bot');
+                chatHistory.push({ role: 'model', parts: [{ text: botResponse }] });
+            } catch (error) {
+                console.error('Ошибка:', error);
+                // Выводим сообщение об ошибке в чат
+                addMessage(`Произошла ошибка при получении ответа: ${error.message}`, 'bot');
+            }
+        }
+
+        function addMessage(content, sender) {
+            const chatMessages = document.getElementById('chat-messages');
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', sender);
+            const messageContent = document.createElement('div');
+            messageContent.classList.add('message-content');
+            messageContent.textContent = content;
+            messageElement.appendChild(messageContent);
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function clearChat() {
+            document.getElementById('chat-messages').innerHTML = '';
+            chatHistory = [];
+            systemPrompt = '';
+            updateConfigDisplay();
+        }
+
+        function loadHistory() {
+            const savedHistory = localStorage.getItem('chatHistory');
+            if (savedHistory) {
+                chatHistory = JSON.parse(savedHistory);
+                chatHistory.forEach(message => addMessage(message.parts[0].text, message.role));
+                if (chatHistory[0] && chatHistory[0].role === 'system') {
+                    systemPrompt = chatHistory[0].parts[0].text;
+                }
+                updateConfigDisplay();
+            }
+        }
+
+        function saveHistory() {
+            localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+        }
+
+        function updateConfigDisplay() {
+            document.getElementById('current-system-prompt').textContent = systemPrompt || 'Не установлен';
+            document.getElementById('generation-config').textContent = JSON.stringify(generationConfig, null, 2);
+        }
+
+        // Инициализация отображения конфигурации при загрузке страницы
+        updateConfigDisplay();
+    </script>
+</body>
+</html>
