@@ -37,19 +37,7 @@
         <meta name="geo.region" content="RU-город Санкт-Петербург" />
         <meta name="ICBM" content="55.752943, 37.583957" />
 
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .click-to-play {
-            display: none;
-        }
-    </style>
+        <style>audio{display: none;}</style>
 
   </head>
 
@@ -77,19 +65,8 @@
         </div>
     </div>
 
-    <!-- Тег для воспроизведения MP3-файла  - Кликните по экрану, чтобы начать воспроизведение. -->
-    <audio id="myAudio" class="click-to-play">
-        <source src="/intro.mp3" type="audio/mpeg">
-    </audio>
 
-    <script>
-        document.addEventListener('click', function() {
-            var audio = document.getElementById('myAudio');
-            audio.play();
-            audio.classList.remove('click-to-play');
-        });
-    </script>
-
+    <audio autoplay> <source src="/intro.mp3" type="audio/mpeg"> </audio>
 
         <div class="hero">
 
