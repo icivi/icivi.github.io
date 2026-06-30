@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Icivi | Ваш персональный ИИ</title>
+	
+	<meta name="description" content="У вас есть задача. У нас есть искусственный интеллект, который её решит.">
+	<meta name="author" content="Icivi">
+
+	<!-- Шрифты для премиального минимализма -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700;800&display=swap" rel="stylesheet">
+	
+	<style>
+		:root {
+			--bg-color: #050505;
+			--text-main: #ffffff;
+			--text-muted: #888888;
+			--accent: #2563eb;
+			--accent-hover: #1d4ed8;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: 'Manrope', sans-serif;
+			background-color: var(--bg-color);
+			color: var(--text-main);
+			line-height: 1.5;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		a {
+			color: var(--text-main);
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+
+		a:hover {
+			color: var(--accent);
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* Header */
+		header {
+			padding: 40px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo {
+			font-size: 24px;
+			font-weight: 800;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+
+		.contact-btn {
+			background: var(--text-main);
+			color: var(--bg-color);
+			padding: 12px 24px;
+			border-radius: 50px;
+			font-weight: 700;
+			font-size: 14px;
+		}
+
+		.contact-btn:hover {
+			background: var(--text-muted);
+			color: var(--bg-color);
+		}
+
+		/* Hero Section */
+		.hero {
+			padding: 120px 0 80px;
+			max-width: 900px;
+		}
+
+		.hero h1 {
+			font-size: clamp(40px, 6vw, 72px);
+			font-weight: 800;
+			line-height: 1.1;
+			margin-bottom: 30px;
+			letter-spacing: -1px;
+		}
+
+		.hero h1 span {
+			color: var(--text-muted);
+		}
+
+		.hero p {
+			font-size: clamp(20px, 3vw, 28px);
+			color: var(--text-muted);
+			font-weight: 300;
+			margin-bottom: 50px;
+			max-width: 800px;
+		}
+
+		/* Features / The Shift */
+		.grid-section {
+			padding: 80px 0;
+			border-top: 1px solid #1a1a1a;
+		}
+
+		.grid-title {
+			font-size: 32px;
+			font-weight: 700;
+			margin-bottom: 60px;
+		}
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 40px;
+		}
+
+		.grid-item h3 {
+			font-size: 24px;
+			margin-bottom: 15px;
+			font-weight: 700;
+		}
+
+		.grid-item p {
+			font-size: 18px;
+			color: var(--text-muted);
+			font-weight: 300;
+		}
+
+		/* Big Statement */
+		.statement {
+			padding: 120px 0;
+			text-align: center;
+			background: #111;
+		}
+
+		.statement h2 {
+			font-size: clamp(32px, 5vw, 56px);
+			font-weight: 800;
+			line-height: 1.2;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+		/* CTA Section */
+		.cta-section {
+			padding: 120px 0;
+			text-align: center;
+		}
+
+		.cta-section h2 {
+			font-size: 48px;
+			font-weight: 800;
+			margin-bottom: 20px;
+		}
+
+		.cta-section p {
+			font-size: 22px;
+			color: var(--text-muted);
+			margin-bottom: 40px;
+		}
+
+		.cta-buttons {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		.btn-primary {
+			background: var(--accent);
+			color: #fff;
+			padding: 18px 40px;
+			border-radius: 8px;
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		.btn-primary:hover {
+			background: var(--accent-hover);
+			color: #fff;
+		}
+
+		.btn-secondary {
+			background: transparent;
+			color: var(--text-main);
+			border: 1px solid var(--text-muted);
+			padding: 18px 40px;
+			border-radius: 8px;
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		.btn-secondary:hover {
+			border-color: var(--text-main);
+		}
+
+		/* Footer */
+		footer {
+			padding: 40px 0;
+			border-top: 1px solid #1a1a1a;
+			color: var(--text-muted);
+			font-size: 14px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+
+		@media (max-width: 768px) {
+			.hero { padding: 60px 0 40px; }
+			.statement { padding: 80px 20px; }
+			.cta-section { padding: 80px 20px; }
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<header>
+			<div class="logo">Icivi</div>
+			<a href="https://t.me/icivilab" class="contact-btn" target="_blank">Написать в Telegram</a>
+		</header>
+
+		<section class="hero">
+			<h1>Вы знаете ChatGPT. <span>Но вы не знаете, на что он реально способен.</span></h1>
+			<p>Вы используете ИИ на 5%. Мы берем всю его мощь и настраиваем лично под вашу задачу. Это красная кнопка для вашего дела.</p>
+		</section>
+	</div>
+
+	<div class="statement">
+		<div class="container">
+			<h2>У вас есть задача.<br>У нас есть AI, который её решит.</h2>
+		</div>
+	</div>
+
+	<div class="container">
+		<section class="grid-section">
+			<div class="grid-container">
+				<div class="grid-item">
+					<h3>Твой личный чит-код</h3>
+					<p>Слышали про искусственный интеллект? Мы — те самые люди, которые заставляют его приносить вам деньги и экономить время. Без воды. Только результат.</p>
+				</div>
+				<div class="grid-item">
+					<h3>Ваш ИИ-монстр</h3>
+					<p>ChatGPT — это база. Мы делаем из него зверя под твои задачи. Персональный интеллект, который понимает специфику именно вашей ситуации.</p>
+				</div>
+				<div class="grid-item">
+					<h3>Сложное стало простым</h3>
+					<p>Твоя проблема кажется невозможной? Обычные способы не работают? Мы скажем прямо, сможет ли ИИ решить её быстрее.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="grid-section">
+			<h2 class="grid-title">Как это работает:</h2>
+			<div class="grid-container">
+				<div class="grid-item">
+					<h3>1. Вводные</h3>
+					<p>Вы приходите с задачей. Любой сложности. Управление, аналитика, личные цели или масштабирование бизнеса.</p>
+				</div>
+				<div class="grid-item">
+					<h3>2. Настройка</h3>
+					<p>Мы берём вашу тему. Подключаем мощь искусственного интеллекта. Настраиваем всё строго под вас.</p>
+				</div>
+				<div class="grid-item">
+					<h3>3. Запуск</h3>
+					<p>Искусственный интеллект работает на вас. Ваш вопрос. Искусственный интеллект. Готово.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section class="cta-section">
+		<div class="container">
+			<h2>Готовы сделать следующий шаг?</h2>
+			<p>Хотите, чтобы ИИ работал именно под вас? Просто свяжитесь с нами.</p>
+			
+			<div class="cta-buttons">
+				<a href="https://t.me/icivilab" target="_blank" class="btn-primary">Telegram @icivilab</a>
+				<a href="tel:+79633123320" class="btn-secondary">Позвонить: +7 (963) 312-33-20</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<footer>
+			<div>© 2024 Icivi. Интеллект на службе вашему покою.</div>
+			<div>Александр Жуйков, Founder</div>
+		</footer>
+	</div>
+
+</body>
+</html>
