@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Charmed Intellect | Your Personal AI. Built Just For You.</title>
+        <meta name="keywords" content="personal artificial intelligence, custom AI, private AI solutions, neural networks, machine learning, custom ChatGPT, AI assistant, AI app">
+        <meta name="Description" content="Charmed Intellect — We build smart apps powered by AI. Custom. Private. Only yours.">
+
+        <meta name="author" content="Charmed Intellect">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="Charmed Intellect | Your Personal AI. Built Just For You." />
+        <meta property="og:description" content="Charmed Intellect — We build smart apps powered by artificial intelligence. Custom. Private. Only yours." />
+        <meta property="og:image" content="https://icivi.github.io/images/logob.png" />
+        <meta property="og:url" content="https://icivi.github.io" />
+        <meta property="og:site_name" content="Charmed Intellect | Personal AI Solutions" />
+        <meta name="twitter:site" content="https://icivi.github.io" />
+        <meta name="twitter:title" content="Charmed Intellect | Your Personal AI. Built Just For You." />
+        <meta name="twitter:description" content="Charmed Intellect — We build smart apps powered by artificial intelligence. Custom. Private. Only yours." />
+        <!-- Mobile -->
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <style>audio{display: none;}</style>
+
+  </head>
+
+  <body>
+    
+    <!-- Delay display script -->
+    <script type="text/javascript">
+    window.onload = function () {
+        var i = 1;
+        var timer = setInterval(function () {
+            i--;
+            if (i == 0) {
+                document.getElementById('example').style.display = 'block';
+                document.getElementById('menu').style.display = 'block';
+                clearInterval(timer);
+            }
+        }, 9000)
+    }
+    </script>
+
+    <div id="maincenter">
+        <div id="menu">
+            <a href="/about_ru.html">About</a> &emsp; <a href="/about_simple03_ru.html">Contacts</a>
+        </div>
+    </div>
+
+    <!-- Background audio -->
+    <audio id="myAudio" autoplay>
+        <source src="/intro.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('myAudio');
+
+            audio.addEventListener('play', function() {
+                console.log('Audio is playing.');
+            });
+
+            audio.addEventListener('error', function() {
+                console.log('Audio playback error.');
+            });
+
+            // If audio does not autoplay, start on first click
+            setTimeout(function() {
+                if (audio.paused) {
+                    document.addEventListener('click', function() {
+                        audio.play();
+                    }, { once: true });
+                }
+            }, 1000);
+        });
+    </script>
+
+        <div class="hero">
+
+          <!-- Particles block -->
+          <div id="container-p5"></div>
+
+          <!-- Animated headline block -->
+          <div class="hero-content">
+            <div id="example" style="display: none;">
+                <h1><span>Charmed Intellect</span></h1>
+                <h3>
+                    <span class="highlight">
+                        <a href="https://t.me/icivilab" target="_blank" style="color: inherit; text-decoration: none;">
+                            Telegram
+                        </a>
+                    </span>
+                </h3>
+                <h3>
+                    <span class="highlight">
+                        <a href="https://api.whatsapp.com/send/?phone=79633123320" target="_blank" style="color: inherit; text-decoration: none;">
+                            WhatsApp
+                        </a>
+                    </span>
+                </h3>
+            </div> 
+          </div>
+
+        </div>
+
+    <!-- Particles and animation scripts -->
+    <script type="text/javascript" src='/js/p5.min.js'></script>
+    <script type="text/javascript" src='/js/jquery.min.js'></script>
+    <script type="text/javascript" src='/js/TweenMax.min.js'></script>
+    <!-- Particles script -->
+    <script type="text/javascript" src='/js/quarks.js'></script>
+    <!-- Fade-in animation script -->
+    <script type="text/javascript" src='/js/appearance.js'></script>
+
+  </body>
+</html>
