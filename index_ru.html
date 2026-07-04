@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Лаборатория машинного обучения Icivi Icivi</title>
+        <meta name="Keywords" content="ACI, AGI, Лаборатория Коллективного Искусственного Интеллекта Icivi" />
+        <meta name="Description" content="Лаборатория нейронных сетей и машинного обучения. AI Research Laboratory. Roadmap Коллективного Искусственного Интеллекта Icivi" -->
+
+        <meta name="author" content="Жуйков Александр, Icivi">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+
+        <meta property="og:title" content="Ассоциация Ускоренного Развития Цивилизации Icivi" />
+        <meta property="og:description" content="Студия Коллективного Искусственного Интеллекта Ассоциации Icivi" />
+        <meta property="og:image" content="https://icivi.github.io/images/logob.png" />
+        <meta property="og:url" content="https://icivi.github.io" />
+        <meta property="og:site_name" content="Лаборатория Коллективного Искусственного Интеллекта Icivi" />
+        <meta name="twitter:site" content="https://icivi.github.io" />
+        <meta name="twitter:title" content="Association Icivi" />
+        <meta name="twitter:description" content="Research Institute of Artificial Collective Intelligence. Icivi" />
+        <meta property="place:location:latitude" content="55.752943"/>
+        <meta property="place:location:longitude" content="37.583957"/>
+        <meta property="business:contact_data:street_address" content="Лиговский пр., 87"/>
+        <meta property="business:contact_data:locality" content="Санкт-Петербург"/>
+        <meta property="business:contact_data:postal_code" content="121069"/>
+        <meta property="business:contact_data:country_name" content="РФ"/>
+        <meta property="business:contact_data:viber" content="+7963312332O"/>
+        <meta property="business:contact_data:phone_number" content="+7963312332O"/>
+        <meta property="business:contact_data:website" content="https://icivi.github.io"/>
+        <meta name="geo.placename" content="Лиговский пр., 87, Санкт-Петербург, РФ, 121069" />
+        <meta name="geo.position" content="55.752943;37.583957" />
+        <meta name="geo.region" content="RU-город Санкт-Петербург" />
+        <meta name="ICBM" content="55.752943, 37.583957" />
+
+        <style>audio{display: none;}</style>
+
+
+  </head>
+
+  <body>
+    
+    <!-- <meta http-equiv="refresh" content="2; url=https://icivi.github.io/index2.html"> -->
+        
+    <!-- скрипт задержки появления -->
+    <script type="text/javascript">
+    window.onload = function () {
+    var i = 1;
+    var timer = setInterval(function () {
+                    i--;
+                    if (i == 0) {
+                        document.getElementById('example').style.display = 'block';
+                        document.getElementById('menu').style.display = 'block';
+                        clearInterval(timer);
+                    }
+                }, 9000)
+}
+</script>
+    <div id="maincenter">
+        <div id="menu">
+            <a href="/about.html">About</a> &emsp; <a href="/contact.html">Contacts</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Тег для воспроизведения MP3-файла  - Кликните по экрану, чтобы начать воспроизведение. -->
+    <audio id="myAudio" autoplay>
+        <source src="/intro.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('myAudio');
+
+            // Проверяем, воспроизводится ли аудио автоматически
+            audio.addEventListener('play', function() {
+                console.log('Аудио воспроизводится автоматически.');
+            });
+
+            audio.addEventListener('error', function() {
+                console.log('Ошибка воспроизведения аудио.');
+            });
+
+            // Если аудио не воспроизводится автоматически, добавляем обработчик клика
+            setTimeout(function() {
+                if (audio.paused) {
+                    document.addEventListener('click', function() {
+                        audio.play();
+                    }, { once: true });
+                }
+            }, 1000); // Задержка в 1 секунду для проверки автовоспроизведения
+        });
+    </script>
+
+
+
+
+
+        <div class="hero">
+
+        <!-- блок частиц и появляющихся заголовков -->
+          <!-- блок частиц -->
+          <div id="container-p5"></div>
+
+          <!-- блок появляющихся заголовков -->
+          <div class="hero-content">
+            <div id="example" style=" display: none; ">
+                <h1><span>Icivi lab</span></h1>
+                <h3><span class="highlight">+79633123320</span></h3>
+            </div> 
+          </div>
+
+        </div>
+
+        <div><a href="/resume.html">Разработка нейронных сетей для организаций</a></div>
+
+   <!--  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>-->
+    <!-- для частиц и появления наплыва -->
+    <script type="text/javascript" src='/js/p5.min.js'></script>
+    <script type="text/javascript" src='/js/jquery.min.js'></script>
+    <script type="text/javascript" src='/js/TweenMax.min.js'></script>
+    <!-- скрипт частиц --> 
+    <script type="text/javascript" src='/js/quarks.js'></script>
+    <!-- скрипт появления наплыва -->
+    <script type="text/javascript" src='/js/appearance.js'></script>
+    <!-- <script type="text/javascript" src="js/drift.js"></script> -->
+  </body>
+</html>
