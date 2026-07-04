@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Charmed Intellect | Artificial Intelligence & Neural Networks</title>
+        <meta name="keywords" content="personal artificial intelligence, custom neural networks, private AI solutions, machine learning, decision support systems">
+        <meta name="Description" content="Charmed Intellect — Custom AI solutions, neural networks, and machine learning tailored for your needs.">
+
+        <meta name="author" content="Charmed Intellect">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+
+
+        <!-- =======
+        Configuration
+        ======== -->
+        <meta property="og:title" content="Charmed Intellect | Artificial Intelligence & Neural Networks" />
+        <meta property="og:description" content="Charmed Intellect — Custom AI solutions, neural networks, and machine learning tailored for your needs." />
+        <meta property="og:image" content="https://icivi.github.io/images/logob.png" />
+        <meta property="og:url" content="https://icivi.github.io" />
+        <meta property="og:site_name" content="Charmed Intellect | AI & Neural Networks" />
+        <meta name="twitter:site" content="https://icivi.github.io" />
+        <meta name="twitter:title" content="Charmed Intellect | AI & Neural Networks" />
+        <meta name="twitter:description" content="Charmed Intellect — Custom AI solutions, neural networks, and machine learning tailored for your needs." />
+        <!-- =======
+        Mobile Configurations
+        ======== -->
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <style>audio{display: none;}</style>
+
+  </head>
+
+  <body>
+    
+    <!-- <meta http-equiv="refresh" content="2; url=https://icivi.github.io/index2.html"> -->
+        
+    <!-- Appearance delay script -->
+    <script type="text/javascript">
+    window.onload = function () {
+    var i = 1;
+    var timer = setInterval(function () {
+                    i--;
+                    if (i == 0) {
+                        document.getElementById('example').style.display = 'block';
+                        document.getElementById('menu').style.display = 'block';
+                        clearInterval(timer);
+                    }
+                }, 9000)
+}
+</script>
+    <div id="maincenter">
+        <div id="menu">
+            <a href="/about.html">About</a> &emsp; <a href="/about_simple03.html">Contacts</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Audio Tag - Click screen to play -->
+    <audio id="myAudio" autoplay>
+        <source src="/intro.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('myAudio');
+
+            // Check if audio plays automatically
+            audio.addEventListener('play', function() {
+                console.log('Audio is playing automatically.');
+            });
+
+            audio.addEventListener('error', function() {
+                console.log('Audio playback error.');
+            });
+
+            // If audio doesn't autoplay, add click handler
+            setTimeout(function() {
+                if (audio.paused) {
+                    document.addEventListener('click', function() {
+                        audio.play();
+                    }, { once: true });
+                }
+            }, 1000); // 1 second delay to check autoplay
+        });
+    </script>
+
+
+
+        <div class="hero">
+
+        <!-- Particles and fading titles block -->
+          <!-- Particles block -->
+          <div id="container-p5"></div>
+
+          <!-- Fading titles block -->
+          <div class="hero-content">
+            <div id="example" style=" display: none; ">
+                <h1><span>Charmed Intellect</span></h1>
+                <h3><span class="highlight"><a href="https://t.me/icivilab" style="color: inherit; text-decoration: none;">Telegram</a></span></h3>
+                <h3><span class="highlight"><a href="https://api.whatsapp.com/send/?phone=79633123320" style="color: inherit; text-decoration: none;">WhatsApp</a></span></h3>
+            </div> 
+          </div>
+
+        </div>
+
+   <!--  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>-->
+    <!-- For particles and fade-in effect -->
+    <script type="text/javascript" src='/js/p5.min.js'></script>
+    <script type="text/javascript" src='/js/jquery.min.js'></script>
+    <script type="text/javascript" src='/js/TweenMax.min.js'></script>
+    <!-- Particles script --> 
+    <script type="text/javascript" src='/js/quarks.js'></script>
+    <!-- Fade-in script -->
+    <script type="text/javascript" src='/js/appearance.js'></script>
+    <!-- <script type="text/javascript" src="js/drift.js"></script> -->
+  </body>
+</html>
