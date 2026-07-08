@@ -18,9 +18,9 @@
   <meta property="og:title" content="Лаборатория Icivi" />
   <meta property="og:description" content="Лаборатория Коллективного Искусственного Интеллекта Icivi" />
   <meta property="og:image" content="http://tatoi.ru/images/jake-rocheleau-250.jpg" />
-  <meta property="og:url" content="https://icivi.github.io" />
+  <meta property="og:url" content="https://charmedintellect.com" />
   <meta property="og:site_name" content="Лаборатория Коллективного Искусственного Интеллекта Icivi" />
-  <meta name="twitter:site" content="https://icivi.github.io" />
+  <meta name="twitter:site" content="https://charmedintellect.com" />
   <meta name="twitter:title" content="Лаборатория Icivi" />
   <meta name="twitter:description" content="Лаборатория Коллективного Искусственного Интеллекта Icivi" />
 <meta property="place:location:latitude" content="55.752943"/>
@@ -31,7 +31,7 @@
 <meta property="business:contact_data:country_name" content="Россия"/>
 <meta property="business:contact_data:viber" content="+79633123320"/>
 <meta property="business:contact_data:phone_number" content="+79633123320"/>
-<meta property="business:contact_data:website" content="https://icivi.github.io"/>
+<meta property="business:contact_data:website" content="https://charmedintellect.com"/>
 <meta name="geo.placename" content="Лиговский пр., 87, Санкт-Петербург, Россия, 121069" />
 <meta name="geo.position" content="55.752943;37.583957" />
 <meta name="geo.region" content="RU-город Санкт-Петербург" />
