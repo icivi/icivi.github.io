@@ -7,7 +7,15 @@
 		<meta name="Description" content="Charmed Intellect — Custom solutions in artificial intelligence, neural networks, and machine learning.">
 		<meta name="author" content="Charmed Intellect">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		
+
+		<!-- =======
+		Language alternates (hreflang)
+		======== -->
+		<link rel="canonical" href="https://charmedintellect.com/" />
+		<link rel="alternate" hreflang="en" href="https://charmedintellect.com/" />
+		<link rel="alternate" hreflang="ru" href="https://charmedintellect.com/about_ru.html" />
+		<link rel="alternate" hreflang="x-default" href="https://charmedintellect.com/" />
+
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" href="https://charmedintellect.com/img/apple-touch-icon.png">
 		<!-- =======
@@ -96,7 +104,7 @@
 									<span></span>
 									<span></span>
 								</div>
-								<ul>
+								<ul id="main-nav-list">
 									<li class="scroll"><a href="/intro.html">Intro</a></li>
 								</ul>
 							</nav>
@@ -107,6 +115,22 @@
 			</div>
 		</section>
 	<section class="slider-area"></section>
+	<!-- ======= Show "RU" link for Russian-speaking visitors ======= -->
+	<script>
+	(function () {
+		var langs = navigator.languages || [navigator.language || ''];
+		var isRu = langs.some(function (l) { return /^ru\b/i.test(l); });
+		if (!isRu) return;
+		var ul = document.getElementById('main-nav-list');
+		if (!ul) return;
+		var li = document.createElement('li');
+		var a = document.createElement('a');
+		a.href = '/about_ru.html';
+		a.textContent = 'ru';
+		li.appendChild(a);
+		ul.appendChild(li);
+	})();
+	</script>
 	<!-- =======
 	Charmed Intellect Area
 	======== -->
