@@ -48,28 +48,23 @@
 	"buffers":
 	[
 		{
-			"file": "about.html",
-			"redo_stack":
-			[
-				[
-					4,
-					1,
-					"insert",
-					{
-						"characters": "\t"
-					},
-					"AQAAAIgAAAAAAAAAmQAAAAAAAAABAAAACQ",
-					"AQAAAAAAAAABAAAAiQAAAAAAAACJAAAAAAAAAAAAAAAAAPC/"
-				]
-			],
+			"file": "about68.html",
 			"settings":
 			{
-				"buffer_size": 18272,
+				"buffer_size": 19045,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
+				[
+					1,
+					1,
+					"",
+					null,
+					"AQAAAM9JAAAAAAAAUkoAAAAAAABmAwAACTwhLS0gWWFuZGV4Lk1ldHJpa2EgY291bnRlciAtLT4KCTxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4KCSAgICAoZnVuY3Rpb24obSxlLHQscixpLGssYSl7CgkgICAgICAgIG1baV09bVtpXXx8ZnVuY3Rpb24oKXsobVtpXS5hPW1baV0uYXx8W10pLnB1c2goYXJndW1lbnRzKX07CgkgICAgICAgIG1baV0ubD0xKm5ldyBEYXRlKCk7CgkgICAgICAgIGZvciAodmFyIGogPSAwOyBqIDwgZG9jdW1lbnQuc2NyaXB0cy5sZW5ndGg7IGorKykge2lmIChkb2N1bWVudC5zY3JpcHRzW2pdLnNyYyA9PT0gcikgeyByZXR1cm47IH19CgkgICAgICAgIGs9ZS5jcmVhdGVFbGVtZW50KHQpLGE9ZS5nZXRFbGVtZW50c0J5VGFnTmFtZSh0KVswXSxrLmFzeW5jPTEsay5zcmM9cixhLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGssYSkKCSAgICB9KSh3aW5kb3csIGRvY3VtZW50LCdzY3JpcHQnLCdodHRwczovL21jLnlhbmRleC5ydS9tZXRyaWthL3RhZy5qcz9pZD0xMTA0OTQ2MDYnLCAneW0nKTsKCgkgICAgeW0oMTEwNDk0NjA2LCAnaW5pdCcsIHtzc3I6dHJ1ZSwgd2Vidmlzb3I6dHJ1ZSwgY2xpY2ttYXA6dHJ1ZSwgZWNvbW1lcmNlOiJkYXRhTGF5ZXIiLCByZWZlcnJlcjogZG9jdW1lbnQucmVmZXJyZXIsIHVybDogbG9jYXRpb24uaHJlZiwgYWNjdXJhdGVUcmFja0JvdW5jZTp0cnVlLCB0cmFja0xpbmtzOnRydWV9KTsKCTwvc2NyaXB0PgoJPG5vc2NyaXB0PjxkaXY+PGltZyBzcmM9Imh0dHBzOi8vbWMueWFuZGV4LnJ1L3dhdGNoLzExMDQ5NDYwNiIgc3R5bGU9InBvc2l0aW9uOmFic29sdXRlOyBsZWZ0Oi05OTk5cHg7IiBhbHQ9IiIgLz48L2Rpdj48L25vc2NyaXB0PgoJPCEtLSAvWWFuZGV4Lk1ldHJpa2EgY291bnRlciAtLT4g",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
 			]
 		}
 	],
@@ -240,26 +235,8 @@
 	],
 	"file_history":
 	[
-		"/H/github/icivi.github.io/about55.html",
-		"/H/github/icivi.github.io/index.html",
-		"/H/github/icivi.github.io/all2.txt",
-		"/H/github/icivi.github.io/about63.html",
-		"/H/github/icivi.github.io/about64.html",
-		"/H/github/icivi.github.io/about65.html",
-		"/H/github/icivi.github.io/about66.html",
-		"/H/github/icivi.github.io/about67.html",
-		"/H/github/icivi.github.io/about68.html",
-		"/H/github/icivi.github.io/about69.html",
-		"/H/github/icivi.github.io/about_en_template.html",
-		"/H/github/icivi.github.io/about_ru.html",
-		"/H/github/icivi.github.io/about_ru_template.html",
-		"/H/github/icivi.github.io/about_ru_template2.html",
-		"/H/github/icivi.github.io/about_target.html",
-		"/H/github/icivi.github.io/contact.html",
-		"/H/github/icivi.github.io/contact_ru.html",
 		"/H/github/icivi.github.io/about.html",
 		"/H/github/icivi.github.io/about01_ru.html",
-		"/H/github/icivi.github.io/about04_ru.html",
 		"/H/github/icivi.github.io/about05_ru.html",
 		"/H/github/icivi.github.io/about10_ru.html",
 		"/H/github/icivi.github.io/about21_ru.html",
@@ -279,12 +256,31 @@
 		"/H/github/icivi.github.io/about52_ru.html",
 		"/H/github/icivi.github.io/about53_ru.html",
 		"/H/github/icivi.github.io/about54_ru.html",
+		"/H/github/icivi.github.io/about55.html",
 		"/H/github/icivi.github.io/about56.html",
 		"/H/github/icivi.github.io/about57.html",
 		"/H/github/icivi.github.io/about58.html",
 		"/H/github/icivi.github.io/about59.html",
 		"/H/github/icivi.github.io/about61.html",
 		"/H/github/icivi.github.io/about62.html",
+		"/H/github/icivi.github.io/about63.html",
+		"/H/github/icivi.github.io/about64.html",
+		"/H/github/icivi.github.io/about65.html",
+		"/H/github/icivi.github.io/about66.html",
+		"/H/github/icivi.github.io/about67.html",
+		"/H/github/icivi.github.io/about69.html",
+		"/H/github/icivi.github.io/about_en_template.html",
+		"/H/github/icivi.github.io/about_ru.html",
+		"/H/github/icivi.github.io/about_ru_template.html",
+		"/H/github/icivi.github.io/about_ru_template2.html",
+		"/H/github/icivi.github.io/about_target.html",
+		"/H/github/icivi.github.io/contact.html",
+		"/H/github/icivi.github.io/contact_ru.html",
+		"/H/github/icivi.github.io/index.html",
+		"/H/github/icivi.github.io/nojs.html",
+		"/H/github/icivi.github.io/all2.txt",
+		"/H/github/icivi.github.io/about68.html",
+		"/H/github/icivi.github.io/about04_ru.html",
 		"/H/github/icivi.github.io/index2.html",
 		"/H/github/icivi.github.io/index_autoplay.html",
 		"/H/github/icivi.github.io/intro.html",
@@ -366,12 +362,11 @@
 		"/H/github/icivi.github.io/del.txt",
 		"/H/github/icivi.github.io/about_simple28_ru.html",
 		"/H/github/icivi.github.io/about_simple27_ru.html",
-		"/H/github/icivi.github.io/about_simple31_ru.html",
-		"/H/github/icivi.github.io/app_chat.html"
+		"/H/github/icivi.github.io/about_simple31_ru.html"
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 295.0
 	},
 	"find_in_files":
 	{
@@ -386,6 +381,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\t<!-- Yandex.Metrika counter -->\n\t<script type=\"text/javascript\">\n\t    (function(m,e,t,r,i,k,a){\n\t        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};\n\t        m[i].l=1*new Date();\n\t        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}\n\t        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)\n\t    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110494606', 'ym');\n\n\t    ym(110494606, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:\"dataLayer\", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});\n\t</script>\n\t<noscript><div><img src=\"https://mc.yandex.ru/watch/110494606\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div></noscript>\n\t<!-- /Yandex.Metrika counter --> ",
+			"script",
 			"neural ",
 			"artificial",
 			"Artificial Intelligence Inside",
@@ -511,9 +508,7 @@
 			"alt=\"",
 			"slicksli",
 			"shatatoy",
-			"fa fa-arrows-h",
-			" для billionaire",
-			" для brioni"
+			"fa fa-arrows-h"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -521,6 +516,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\t<noscript><div><img src=\"https://mc.yandex.ru/watch/110494606\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div></noscript>",
 			"\t\t\t\t\t<div class=\"col-md-6 col-sm-6 col-xs-12\">\n\t\t\t\t\t\t<div class=\"copyright-boot\">\n\t\t\t\t\t\t\t<p>Copyright by Charmed Intellect <span style=\"font-family: monospace; font-size: 10px; margin-left: 10px; opacity: 0.3;\">Brain Inside</span></p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>",
 			"Charmed Intellect",
 			"\t\t\t\t\t<div class=\"col-md-6 col-sm-6 col-xs-12\">\n\t\t\t\t\t\t<div class=\"copyright-boot\">\n\t\t\t\t\t\t\t<p>Copyright by <a href=\"/contact.html\">AI Research Laboratory Icivi</a></p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"col-md-6 col-sm-6 col-xs-12\">\n\t\t\t\t\t\t<div class=\"social-icons footer-social\">\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<a href=\"https://t.me/icivilab\" target=\"_blank\">\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-paper-plane\"></i>\n\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<a href=\"https://api.whatsapp.com/send/?phone=79269319322\" target=\"_blank\">\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-whatsapp\"></i>\n\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<a href=\"https://www.youtube.com/@charmed_ai_architect\" target=\"_blank\">\n\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-youtube-play\"></i>\n\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>",
@@ -600,20 +596,20 @@
 			[
 				{
 					"buffer": 0,
-					"file": "about.html",
+					"file": "about68.html",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18272,
+						"buffer_size": 19045,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5125,
-								5125
+								19045,
+								19045
 							]
 						],
 						"settings":
@@ -623,30 +619,20 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										5217,
-										5220
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"region.orangish"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										5097,
-										5100
-									]
 								},
 								"unmatched":
 								{
+									"1":
+									[
+										19040,
+										19044
+									]
 								}
 							},
 							"bracket_highlighter.regions":
@@ -717,7 +703,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 12020.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -729,7 +715,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 295.0
 	},
 	"input":
 	{
@@ -799,7 +785,7 @@
 	"project": "icivi.sublime-project",
 	"replace":
 	{
-		"height": 234.0
+		"height": 586.0
 	},
 	"save_all_on_build": true,
 	"select_file":
